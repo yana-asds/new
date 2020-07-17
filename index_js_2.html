@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+<script>
+
+
+
+var n1 = prompt ("Введите первое число");
+var operation = prompt ("Выберите действие + - * /");
+var n2 = prompt ("Введите второе число");
+
+if (operation=="+") {
+	resalt = n1+n2;
+alert ("Результат сложения = "+ (+n1+ +n2));
+}
+
+else if (operation=="-") {
+	resalt = n1-n2;
+alert ("Результат вычитания = "+ (+n1- +n2));
+}
+
+else if (operation=="*") {
+	resalt = n1*n2;
+alert ("Результат умножения = "+ (+n1* +n2));
+}
+
+else if (operation=="/") {
+	resalt = n1/n2;
+alert ("Результат деления = "+ (+n1/ +n2));
+}
+
+else {
+	alert ("Что-то пошло не так");
+}
+
+</script>
+</body>
+</html>
