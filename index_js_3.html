@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+<script>
+
+var usd=27;
+var eur=30;
+var uah=1;
+
+
+var n1 = prompt ("Введите тип валюты, которую конвертируем");
+var n2 = prompt ("Введите тип валюты, в которую конвертируем");
+var n3 = prompt ("Введите сумму");
+
+ if ((n1=="usd") && (n2=="uah")) {
+alert ("Результат конвертации= "+ (+usd* +n3)+" uah");
+}
+
+
+else if ((n1=="usd") && (n2=="eur")) {
+alert ("Результат конвертации= "+((+usd/ +eur)* +n3)+" eur");
+}
+
+else if ((n1=="eur") && (n2=="uah")) {
+alert ("Результат конвертации= "+(+eur* +n3)+" uah");
+}
+
+else if ((n1=="eur") && (n2=="usd")) {
+alert ("Результат конвертации= "+((+eur/ +usd)* +n3)+" usd");
+}
+
+else if ((n1=="uah") && (n2=="usd")) {
+alert ("Результат конвертации= "+(+n3/ +usd)+" usd");
+}
+
+else if ((n1=="uah") && (n2=="eur")) {
+alert ("Результат конвертации= "+(+n3/ +eur)+" eur");
+}
+
+else {
+	alert ("Что-то пошло не так");
+}
+
+
+</script>
+</body>
+</html>
